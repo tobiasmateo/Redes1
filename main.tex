@@ -1,0 +1,93 @@
+\documentclass{article}
+
+
+\usepackage[spanish]{babel}
+
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{authblk}
+
+\title{Trabajo Practico 1 Redes}
+\author{Tobias Mateo}
+\affil{\texttt{tobiasmateo46@gmail.com} }
+\begin{document}
+\maketitle
+
+\section{Packet Tracer}
+
+Packet Tracer es una herramienta de simulación de redes creada por Cisco para ayudar a los estudiantes y profesionales a aprender y practicar el diseño, configuración y resolución de problemas de redes sin necesidad de hardware físico. Las simulaciones de red pueden tener dos tipos de ejecución con respecto a como estas trabajan el tiempo pueden ser tiempo real, lo que significa que los paquetes se transmiten y procesan como lo harían en una red real, o también puede ser en tiempo de simulación,Este modo permite a los usuarios controlar y avanzar el tiempo de manera manual. 
+   
+
+\subsection{Modo Físico:  }
+
+Permite visualizar cómo se vería la red en un entorno físico real. Los usuarios pueden organizar los dispositivos en racks y observar la distribución física de la red, como la ubicación de los cables, routers y switches en un espacio simulado. Es útil para entender la disposición física de una red y cómo podría ser instalada en un entorno real. 
+
+ \subsection{Modo Lógico :  }
+
+Es donde se configuran los dispositivos y se diseña la topología de la red, conectando routers, switches, PCs, y otros dispositivos de red. Aquí se enfocan en la configuración de protocolos, la asignación de direcciones IP, y la implementación de reglas de routing y switching.Sirve para tener una vista conceptual de la red
+
+
+
+
+\section{Dispositivos finales}
+\subsection{PC}
+Se refiere a una computadora de escritorio común,podemos  ver las diferentes opciones de personalizacion de módulos que tiene y modificaciones de estos mismos. Tenemos que tener en cuenta para hacer estos cambios necesitamos tener la pc apagada y para que la red corra y las distintas conexiones funciones la debemos tener encendida, además con el dispositivo prendido podemos acceder a un "escritorio" con diferentes herramientas como una terminal
+\subsection{Laptop}
+La laptop seria algo símil a lo que seria una computadora pero con diferentes opciones de módulos y con la principal diferencia de que es portátil y no queda fija como seria una PC de escritorio común,lo que representa un cambio para las conexiones, las funcionalidades son casi las mismas.
+\subsection{Server}
+Un servidor  es una computadora en especial que se utiliza para proporcionar servicios, recursos o datos a otros dispositivos en una red,contando con sus respectivos módulos y servicios que podemos modificar en la simulación(HTTP,FTP,ETC). 
+\subsection{Printers}
+Son impresoras que pueden ir conectadas a una red de computadoras, nos daría la visión de una conexión real donde los diferentes usuarios que estén comunicados a esta impresora, podrían utilizarla y ver cuales son las formas mas eficientes de hacer estas conexiones 
+
+\section{Dispositivos de red}
+\subsection{Routers}
+es un dispositivo que permite interconectar redes con distinto prefijo en su dirección IP. Su función es la de establecer la mejor ruta que destinará a cada paquete de datos para llegar a la red y al dispositivo de destino, según las diferentes características(comandos,módulos,versiones) y las necesidades que tengan los dispositivos que conectemos usaremos diferentes modelos de routers
+
+\subsection{Switchers}
+Un switch es un dispositivo de red que se utiliza para conectar múltiples dispositivos dentro de una red local (LAN) y facilitar la comunicación entre ellos. A diferencia de un router, que conecta redes diferentes y gestiona el tráfico entre ellas, un switch opera principalmente dentro de una única red y se enfoca en el manejo de tráfico dentro de esa red 
+\subsection{Hubs}
+es un dispositivo de red que permite centralizar diferentes nodos de una red. Su función principal,es de multiplicadores de señal,permitiendo establecer una conexión entre un número de computadoras y permitir el intercambio de datos, aunque debido a ciertas limitaciones ya casi no se utilizan y es mas comun ver Switchers
+
+\section{Cableado}
+Hay diferentes tipos de cableados para la red como pueden ser:
+\subsection{Consola}
+Un cable de consola se utiliza para conectar un dispositivo de red  a una computadora o terminal para realizar la configuración y administración del dispositivo.
+\subsection{Fibra Óptica}
+Los cables de fibra óptica utilizan luz para transmitir datos a través de cables de vidrio o plástico. Esto permite altas velocidades de transferencia y largas distancias sin pérdida significativa de señal. Se suelen usar en casos de conexiones donde necesitemos una ancho de banda grande y buenas velocidades, sumándole la facilidad que hay para conectar distancias mas largas
+\subsection{Cross Over}
+Un cableado Cross Over tiene como funcion hacer comunicaciones entre dispositivos que cumplen roles iguales dentro de la red que manejamos. Ejemplo: De una pc a un pc o de un router a un router
+\subsection{Straight Through}
+Un cableado Straight Throught tiene como funcionalidad hacer conexiones entre dispositivos que cumplen diferentes funcionales dentro de la red que manejamos. Ejemplo: De una pc a un switch o de un router a un hub
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth, inner]{Conexion cruzada.png}
+\caption{Conexión cruzada simple entre dos PCs}
+\label{}
+\end{figure}
+
+
+
+
+
+
+
+Aquí podemos ver dos PCs conectadas a través de un cableado cruzado,a pesar de la simpleza de la conexión podemos observar la limitación de esta al poder comunicar solo 2 equipos, solo a través de un Hub o de un Switch podriamos conectar mas de dos dispositivos finales entre si.
+
+\section*{Referencias}
+Router: https://es.wikipedia.org/wiki/R%C3%BAter#:~:text=Un%20r%C3%BAter%2C%E2%80%8B%20enrutador%E2%80%8B,y%20al%20dispositivo%20de%20destino.
+Hubs : https://www.geeknetic.es/HUB/que-es-y-para-que-sirve
+
+Fibra optica : https://corporate.enelx.com/es/question-and-answers/advantages-of-fiber-optic#:~:text=Una%20red%20de%20fibra%20%C3%B3ptica%20est%C3%A1%20formada%20por%20cables%20que,en%20se%C3%B1ales%20de%20datos%20digitales.
+
+\section*{Repositorio}
+Puedes encontrar el código fuente de este documento en mi repositorio de GitHub: \url{https://github.com/tobiasmateo/redes1}
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+\end{document}
